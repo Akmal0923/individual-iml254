@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body bgcolor="#ec8dcd">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d87fbb;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="myfamily.html">My Family</a>
+    <a href="myfriends.html">My Friends</a>
+    <a href="myhobbies.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<h2>ABOUT ME</h2>
+<center><video width="400" height="400" controls></venter>
+<source src="video/myself.mp4" type="video/mp4">
+</video>
+</td>
+
+
+<header>
+  <h2><font face="Bradley Hand ITC"><marquee>"Life is a learning experience, we have at the end of its memories and skills."</marquee> </font></h2>
+</header>
+
+<section>
+    
+  <article>
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h2>LET'S BEGIN THE STORY BEFORE SEE THE PICTURE AND READ IT FEEL FREE TO PLAY THE MUSIC I PUT IN THE BELOW!</h2>
+<hr>
+
+<h2>NOR AKMAL</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/myself 12.jpeg" alt="Mountains" style="width:100%">
+      <h3>2024</h3>
+      <p>this picture taken when I chillin in 'cafe kopi&roti' while waiting to do my muet test in Alor Setar. Such a great memories!</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/myself 6.jpeg" alt="Lights" style="width:100%">
+      <h3>2006</h3>
+      <p>I was in my age where i know nothing except to posing infront of my parents canon camera.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/myself 7.jpeg" alt="Nature" style="width:100%">
+      <h3>2010</h3>
+      <p>The face before entering kindergarden hoho!</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/myself 8.jpeg" alt="Mountains" style="width:100%">
+      <h3>2006</h3>
+      <p>look at that i thought our photoshoot is already done. OHMYGOD!</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="image/myself 9.jpeg" alt="Bear" style="width:25%">
+  <h3>2006</h3>
+  <p>look at that, I was born to be a model. So shut up!</p> 
+
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rWDp9tBPQR9z6U5YyRSK4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <p><font face="Bradley Hand ITC"><marquee>MUHAMMAD NOR AKMAL AIDIL</marquee></font></p>
+  <p><font face="Bradley Hand ITC"><marquee>"THIS IS MY SPACE TO SHOW MY WORKS"</marquee></font></p>
+  <p><font face="Bradley Hand ITC"><marquee>"UNIVERSITI TEKNOLOGI MARA CAWANGAN KEDAH 2024"</marquee></font></p>
+ </footer>
+
+</body>
+</html>
