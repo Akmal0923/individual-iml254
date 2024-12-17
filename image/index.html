@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body bgcolor="#ec8dcd ">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #47284c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #b85dc7;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="my family.html">My Family</a>
+    <a href="my friends.html">My Friends</a>
+    <a href="my hobbies.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+<h2><marquee></h2>WELCOME TO MY PERSONAL WEBSITE!</marquee></h2>
+<p><marquee>YOU ARE ABOUT TO EXPLORE MY FIRST PERSONAL WEBSITE</marquee></p>
+<p><marquee>WARNING ALERT! ONCE YOU'RE ENTER THIS WEBSITE THERE IS NO TURNBACK</marquee></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<h2></h2>
+<p></p>
+<p></p>
+
+<header>
+<tr>
+<td><img src="image/myself 2.jpeg" alt="width="500" height="500"></td>
+</header>
+
+
+<header>
+  <h2><marquee>MUHAMMAD NOR AKMAL AIDIL BIN SEBARI 2023156979 IML254</marquee></h2>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1> <marquee><span style='font-size:100px;'>&#128522;</span>CREATE FOR UNIVERSITI TEKNOLOGI MARA</marquee></h1>
+    <p><marquee>don't forget to check out every page that have been provided</marquee></p>
+    <p><marquee>CLICK THREE LINE BUTTON IN THE ABOVE FOR MORE INFORMATION</marquee></p>
+  </article>
+</section>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <p>MUHAMMAD NOR AKMAL AIDIL</p>
+</footer>
+
+</body>
+</html>
